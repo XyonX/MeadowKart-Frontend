@@ -2,20 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/*=======================================================================
+1. Variables
+========================================================================*/
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-family-body: var(--font-poppins), sans-serif;
+  --font-family-heading: var(--font-nunito), sans-serif;
+  --font-family-architects: var(--font-architects-daughter), cursive;
+
+  --color-primary: #4eb92d;
+  --color-secondary: #fc9135;
+
+  --color-text-body: #696969;
+  --color-text-heading: #41464c;
+  --color-text-paragraph: #696969;
+
+  --facebook: #3b5998;
+  --twitter: #00acee;
+  --linkedin: #1976d2;
+  --pinterest: #3b5998;
+  --youtube: #c4302b;
+  --skype: #00aff0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/*=======================================================================
+2. Theme default css
+========================================================================*/
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family-body);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-text-body);
+  font-style: normal;
 }
